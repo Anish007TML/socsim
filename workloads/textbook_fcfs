@@ -1,0 +1,8 @@
+# Classic textbook example (Silberschatz, Operating System Concepts, ch. 5):
+# three CPU bursts arriving at time 0 in the order P1, P2, P3.
+# Run with:  ./build/socsim workloads/textbook_fcfs.txt --ideal --cores 1 --cs 0 --sched fcfs --gantt
+# Expected FCFS average waiting time = 17, RR (quantum 4) = 5.67.
+# name arrival burst priority pattern wss_kb
+P1     0       24    0        -       0
+P2     0       3     0        -       0
+P3     0       3     0        -       0
