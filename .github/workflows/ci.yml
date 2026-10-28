@@ -1,0 +1,20 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and test
+        run: make && make test
+      - name: Textbook demo
+        run: make demo
+      - name: AddressSanitizer + UBSan
+        run: make asan
+      - name: Experiments
+        run: |
+          make clean && make
+          pip install matplotlib
+          python3 tools/experiments.py
