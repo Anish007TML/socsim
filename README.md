@@ -132,7 +132,3 @@ docs/HOW_IT_WORKS.md  plain-language walkthrough and interview questions
 * Single-level page tables (real ones have 2–5 levels); caches do not model writes or coherence.
 * Ideas for extensions: multilevel feedback queue scheduling, a working-set or page-fault-frequency
   policy to stop thrashing, set-associative TLBs, cache coherence (MESI) between cores.
-
-## License
-
-MIT
