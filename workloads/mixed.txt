@@ -1,0 +1,9 @@
+# A realistic mix of programs sharing the simulated SoC.
+# Total working set ~2.9 MiB: fits in the default 4 MiB of RAM (--frames 1024),
+# starts thrashing below ~700 frames. Try --frames 400.
+# name      arrival  burst   priority  pattern  wss_kb
+browser       0     200000      2      hotcold    512
+compiler      0     300000      3      seq        384
+database   2000     200000      1      random     256
+game       5000     200000      2      hotcold    768
+backup    10000     100000      4      stride    1024
