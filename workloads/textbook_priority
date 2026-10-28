@@ -1,0 +1,8 @@
+# Textbook priority example (smaller number = higher priority):
+# expected average waiting time = 8.2.
+# ./build/socsim workloads/textbook_priority.txt --ideal --cores 1 --cs 0 --sched prio --gantt
+P1  0  10  3  -  0
+P2  0  1   1  -  0
+P3  0  2   4  -  0
+P4  0  1   5  -  0
+P5  0  5   2  -  0
