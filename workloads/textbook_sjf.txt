@@ -1,0 +1,6 @@
+# Textbook SJF example: expected average waiting time = 7.
+# ./build/socsim workloads/textbook_sjf.txt --ideal --cores 1 --cs 0 --sched sjf --gantt
+P1  0  6  0  -  0
+P2  0  8  0  -  0
+P3  0  7  0  -  0
+P4  0  3  0  -  0
